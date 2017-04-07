@@ -18,7 +18,7 @@
 		change : function(v) {
 			var _this = this;
 			var str = "0";
-			var address = "file:///C:/Users/vamous/Desktop/2017-4-6/index.html?cityId=";  
+			var address = "https://vamouszj.github.io/Local_data_query/?cityId=";  
 			for(var i = 0; i < v; i++) {
 				str += ("_" + (_this.currentClick - 1));  //上一次点击的位置
 			}
