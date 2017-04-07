@@ -18,7 +18,7 @@
 		change : function(v) {
 			var _this = this;
 			var str = "0";
-			var address = "https://vamouszj.github.io/Local_data_query/?cityId=";  
+			//var address = "https://vamouszj.github.io/Local_data_query/?cityId=";  
 			for(var i = 0; i < v; i++) {
 				str += ("_" + (_this.currentClick - 1));  //上一次点击的位置
 			}
@@ -40,7 +40,7 @@
 								liEle.onclick = function() {
 									document.getElementById('countryClick').innerHTML = this.innerText;
 									console.log(this.innerText);
-									window.location.href = address + this.getAttribute('id');
+									window.location.href += "?cityId=" + this.getAttribute('id');
 								}
 							}
 						}else {
